@@ -90,7 +90,7 @@ auctionMiddleware.dateValidation = function (req, res, next) {
         return res.status(400).json({
             msg: { startDate: "date must occure in the future" }
         });
-    } else if (givenStartDate >= givenEndDate) {
+    } else if (givenStartDate > givenEndDate) {
         return res.status(400).json({
             msg: {
                 endDate: "end date must occur later than start date",

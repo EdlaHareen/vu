@@ -2,7 +2,7 @@ const mongoose = require("mongoose");
 
 (async () => {
     try {
-        await mongoose.connect(process.env.DBURI, {
+        await mongoose.connect("mongodb+srv://ksainarsimhareddy03:zdlLolJIbOaCJw9R@auction.or9w3vi.mongodb.net/", {
             useUnifiedTopology: true,
             useNewUrlParser: true,
             useCreateIndex: true
@@ -16,7 +16,7 @@ const mongoose = require("mongoose");
 const db = mongoose.connection;
 
 db.on("open", () => {
-    console.log(`Successfully connected to MongoDB ${process.env.DBURI}`);
+    console.log(`Successfully connected to MongoDB`);
 });
 
 db.on("error", console.error.bind(console, "Can't connect to MongoDB: "));

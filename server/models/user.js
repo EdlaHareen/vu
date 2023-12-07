@@ -6,7 +6,7 @@ const userSchema = new Schema({
     username: {
         type: String,
         required: [true, "username is required"],
-        unique: [true, "username is not available"],
+        unique: true,
         minlength: [3, "must not be less that 3 charatcters"]
     },
     password: {
@@ -26,6 +26,7 @@ userSchema.methods.isValidPassword = async function (password) {
 const User = mongoose.model("User", userSchema);
 
 User.processErrors = (err) => {
+    console.error(err); // Log the complete error object
     const msg = {};
     for (const key in err.errors) {
         msg[key] = err.errors[key].message;

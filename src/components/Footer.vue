@@ -1,13 +1,5 @@
 <template>
   <div class="footer">
-        <a id="app-author" class="footer-item" href="https://github.com/DaRoTP">
-            <img src="@/assets/user_icon.svg" alt="user" >
-            <span>Author: DaRo</span>
-        </a>
-        <a id="app-source-code"  class="footer-item" href="https://github.com/DaRoTP/Auction_vue-node">
-            <img src="@/assets/source_code_icon.svg" alt="source code" >
-            <span>Source Code</span>
-        </a>
   </div>
 </template>
 
