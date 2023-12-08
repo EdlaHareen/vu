@@ -15,11 +15,11 @@ git init
 git add -A
 git commit -m 'deploy'
 
-git remote add origin https://github.com/EdlaHareen/vu.git
+git remote set-url origin https://github.com/EdlaHareen/vu.git
 # if you are deploying to https://<USERNAME>.github.io
 # git push -f git@github.com:<USERNAME>/<USERNAME>.github.io.git main
 
 # if you are deploying to https://<USERNAME>.github.io/<REPO>
-git push -f git@github.com:EdlaHareen/vu.git main:gh-pages
+git push -f git@github.com:EdlaHareen/u.git main:gges
 
 cd -
