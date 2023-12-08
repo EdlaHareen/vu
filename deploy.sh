@@ -14,6 +14,8 @@ npm run build
 git init
 git add -A
 git commit -m 'deploy'
+git config --global credential.helper manager
+
 git remote set-url origin https://github.com/EdlaHareen/vue.git
 # if you are deploying to https://<USERNAME>.github.io
 # git push -f git@github.com:<USERNAME>/<USERNAME>.github.io.git main
