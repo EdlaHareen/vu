@@ -7,7 +7,7 @@ set -e
 npm run build
 
 # navigate into the build output directory
-cd public
+
 # if you are deploying to a custom domain
 # echo 'www.example.com' > CNAME
 
@@ -20,6 +20,6 @@ git remote set-url origin https://github.com/EdlaHareen/vu.git
 # git push -f git@github.com:<USERNAME>/<USERNAME>.github.io.git main
 
 # if you are deploying to https://<USERNAME>.github.io/<REPO>
-git push -f git@github.com:EdlaHareen/u.git main:gges
+git push -f git@github.com:EdlaHareen/vu.git main:gh-pages
 
 cd -
